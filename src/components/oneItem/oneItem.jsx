@@ -9,7 +9,10 @@ import s from './oneItem.module.css'
 
 export default function OneItem({data}) {
   let {title, img, desc, link} = data;
-  desc = desc.slice(1, 100)+'...'
+
+  title = title.slice(1, 32);
+  desc = desc.slice(1, 100)+'...';
+
   return (
     <Card className={s.oneCard}>
       <a className={s.link_title} href={link}>
