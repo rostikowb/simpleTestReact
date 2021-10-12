@@ -1,0 +1,45 @@
+
+.oneCard{
+    height: 410px;
+    margin: 20px 10px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1.1fr 1.5fr 1fr 0.5fr;
+    gap: 0 0;
+}
+.oneCard > * {
+    overflow: hidden;
+}
+.link_title{
+    text-decoration: none;
+    color: #201e1e;
+}
+.title{
+
+}
+
+.img{
+    padding-top: 56.25%;
+}
+.text{
+
+}
+.link{
+    margin-bottom: 20px;
+}
+.link a{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #363232;
+    font-size: 18px;
+}
+
+@media screen and (max-width: 380px) {
+    .oneCard{
+        margin: 10px 5px;
+    }
+}
